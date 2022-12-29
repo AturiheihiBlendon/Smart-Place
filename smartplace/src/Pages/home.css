@@ -1,0 +1,73 @@
+.landing {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/laundry.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    top: 0;
+    position: sticky;
+}
+.appname {
+    font-size: 30px;
+    padding: 10px;
+    
+}
+.app-name {
+    text-decoration: none;
+}
+.navigation ul{
+    padding: 20px;
+    margin: 0px 100px;
+}
+.links {
+    margin: 0px 20px;
+    text-decoration: none;
+}
+.inspire {
+    text-align: center;
+    /* background-color: aqua; */
+    width: 50%;
+    margin-left: 200px;
+    font-weight: 600;
+    padding-top: 50px;
+}
+.inspire a {
+    text-decoration: none;
+}
+
+.team {
+    text-align: center;
+    width: 50%;
+    margin-left: 200px;
+    font-weight: 600;
+    padding-top: 100px;
+}
+img {
+    border-radius: 50%;
+    padding-top: 3px;
+}
+
+.name {
+    padding: 5px;
+}
+p {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+/* .links {
+    display: flex;
+    margin-left: 200px;
+    
+} */
+.links a {
+    padding: 0px 20px;
+    margin-left: 25px;
+}
