@@ -1,2 +1,4 @@
 venv
 Api/__pycache__
+Janitor/__pycache__
+Janitor/migrations
