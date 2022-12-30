@@ -9,12 +9,15 @@ function Dashboard() {
                     <Link to='/dashboard' className='logo-name'>SMART PLACE</Link>
                 </div>
 
-                <nav className='navigate'>
-                    <ul>
-                        <a href="#"className='main-a'>Logout</a>
-                    </ul>
-                </nav>
-
+                <div className='user'>
+                    <p className='user-msg'>Welcome</p>
+                    <nav className='navigate'>
+                        <ul>
+                            <Link to='/' className='main-a'>Logout</Link>
+                            {/* <a href="#"className='main-a'>Logout</a> */}
+                        </ul>
+                    </nav>
+                </div>
                 
             </div>
         </div>

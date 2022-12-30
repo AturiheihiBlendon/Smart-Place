@@ -13,6 +13,13 @@
 .logo-name {
     text-decoration: none;
 }
+.user {
+    display: flex;
+}
+.user-msg {
+    padding: 20px;
+    font-size: 18px;
+}
 .navigate {
     padding: 20px;
     margin: 0px 100px;
