@@ -12,6 +12,8 @@ function Register() {
                         <br></br>
                         <input type="text" placeholder='Last Name'/>
                         <br></br>
+                        <input type="text" placeholder='User Name'/>
+                        <br></br>
                         <input type="Password" placeholder='Password' />
                         <br></br>
                         <input type="Password" placeholder='Confirm Password'/>
