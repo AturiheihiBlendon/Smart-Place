@@ -49,8 +49,8 @@ function Home() {
             <div className="inspire">
             Over years, people have employed janitors/ maids in their offices and homesteds.<br></br>
             It turns out most of those people lack skills and are not reliable in the long run<br></br>
-            At <a href="#">SMART PLACE</a> , we bring you credible and skilled janitors, laundary men and women.
-            <a href="#">Register</a> today and we connect you to one 
+            At <Link to='/'>SMART PLACE</Link> , we bring you credible and skilled janitors, laundary men and women.
+            <Link to='/register'>Register</Link> today connect to one 
             </div>
 
             {/* Team */}
