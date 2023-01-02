@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'knox',
     'Accounts',
-    'Janitor',
+    'Janitor.apps.JanitorConfig',
 ]
 
 MIDDLEWARE = [
