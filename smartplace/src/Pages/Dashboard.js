@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './dashboard.css';
 import { Link } from 'react-router-dom';
+import Janitor from '../components/janitor';
 
 
 const BaseUrl = 'http://127.0.0.1:8000/';
@@ -48,10 +49,24 @@ function Dashboard() {
                 
             </div>
 
-
-
-            <div className='content'>
+            <div className='head-title'>
+                <h3>Click on mobile no. to connect to your nearest janitor</h3>
             </div>
+            
+            <div className='content'>
+                {janitor.length > 0 &&(
+                    <div className="janitor-list">
+                        {janitor.map((item) => (
+                            <Janitor Username={item.Username}
+                            Contact={item.Contact}
+                            Description={item.Description}
+                            Location={item.Location}
+                            key={item.id}/>
+                        ))}
+                    </div>
+                )}
+            </div>
+            
         </div>
     );
 }

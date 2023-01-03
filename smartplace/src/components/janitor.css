@@ -1,0 +1,42 @@
+.janitor {
+    /* background-color: azure; */
+    /* border: solid rgb(145, 144, 144) ; */
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.janitor:hover{
+    background-image: linear-gradient(rgb(191, 185, 185), rgb(80, 74, 74));
+    font-weight: 700px;
+}
+
+.reach-out {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.reach-out p {
+    padding-right: 10px;
+    font-size: 16px;
+    font-weight: 700px;
+}
+
+.reach-out a {
+    font-size: 16px;
+    text-decoration: none;
+}
+.janitor-desc p{
+    font-size: 18px;
+    font-weight: 700px;
+}
+
+.janitor-name {
+    font-size: 20px;
+    font-weight: 900px;
+}
+
+.reach-out a:hover{
+    color: pink;
+}
