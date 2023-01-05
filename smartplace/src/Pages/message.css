@@ -1,0 +1,18 @@
+.message {
+    padding: 0px 450px;
+}
+
+.form-group label{
+    padding: 10px;
+    font-style: italic;
+}
+
+.btn{
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #3333;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }

@@ -7,7 +7,7 @@ const login_url = 'http://127.0.0.1:8000/api'
 
 function Login() {
     
-  const navigate = useNavigate()
+    const navigate = useNavigate()
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -26,7 +26,8 @@ function Login() {
         const data = await res.json();
     
         if (res.ok){
-          console.log(data);
+          // console.log(data);
+          console.log("User fetched")
           navigate('/dashboard')
         }
         else{
