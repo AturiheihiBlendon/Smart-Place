@@ -4,3 +4,5 @@ Janitor/__pycache__
 Janitor/migrations
 Accounts/__pycache__
 Accounts/migrations
+sms/__pycache__
+sms/migrations

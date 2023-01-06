@@ -41,9 +41,11 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'knox',
+    'sms',
     'Accounts',
     'Janitor.apps.JanitorConfig',
     'corsheaders',
+    
 ]
 
 MIDDLEWARE = [

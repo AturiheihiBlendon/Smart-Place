@@ -25,6 +25,7 @@ routers.register('janitors', JanitorViewset)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('Accounts.urls')),
+    path('sms/', include('sms.urls')),
     path('', include(routers.urls)),
 
 ]
