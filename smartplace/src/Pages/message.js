@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import './message.css'
 
 
@@ -7,6 +7,7 @@ const API = 'http://127.0.0.1:8000/sms/create_sms/';
 
 function Send_message () {
 
+    const navigate = useNavigate()
     const [phone_number, setphone_number] = useState('');
     const [message, setmessage] = useState('');
 
@@ -22,6 +23,15 @@ function Send_message () {
             });
             if (res.ok){
                 alert("Message sent")
+                setphone_number('')
+                setmessage('')
+                navigate('/dashboard')
+            }
+            else {
+                alert("Send fail")
+                setphone_number('')
+                setmessage('')
+                navigate('/dashboard')
             }
             
         }
@@ -49,29 +59,6 @@ function Send_message () {
                 <h3>Send Message</h3>
             </div>
             
-            {/* <div className='content'>
-                <div className="form">
-                    <div className="form-group">
-                        <label htmlFor="title">Phone number</label>
-                        <input type="tel" name="phone_number" id="phone_number" 
-                        value={phone_number} onChange={(e) =>{return setphone_number(e.target.value)}}
-                        className="form-control"/>
-                    </div>
-
-                    <div className="form-group">
-                        <label htmlFor="content">Text Message</label>
-                        <textarea name="content" id="" cols="30" rows="5" 
-                        value={message} onChange={(e) =>{return setmessage(e.target.value)}}
-                        className="form-control"></textarea>
-                    </div>
-
-                    <div className="form-group">
-                        <input type="submit" value="SEND" onClick={ Send }
-                        className="btn" />
-                    </div>
-                </div>
-            </div> */}
-
             <div className='content'>
 
                 <form action="">
