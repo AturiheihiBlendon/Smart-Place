@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css'
 
@@ -27,20 +27,15 @@ function Login() {
     
         if (res.ok){
           // console.log(data);
-          console.log("User fetched")
+          localStorage.setItem('user-info', JSON.stringify(data));
+          // console.log("User fetched")
           navigate('/dashboard')
         }
         else{
-          console.log("Failed");
+          // console.log("Failed");
           alert("Invalid creditials");
         }
     }
-  //   useEffect(
-  //     ()=>{
-  //       redirect("/Dashboard")
-  //     },[]
-  // )
-
     return (
         
         <div className="login">

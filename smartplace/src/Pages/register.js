@@ -3,7 +3,7 @@ import './register.css'
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const register_url = 'http://127.0.0.1:8000/api'
+const register_url = 'http://127.0.0.1:8000/api';
 
 function Register() {
 
@@ -31,6 +31,7 @@ function Register() {
         if (res.ok){
           // console.log(data);
           console.log("User fetched")
+          alert("Registered successfully")
           navigate('/login')
         }
         else{

@@ -3,13 +3,14 @@ import { useNavigate, Link } from 'react-router-dom';
 import './message.css'
 
 
-const API = 'http://127.0.0.1:8000/sms/create_sms/';
+const url_endpoint = 'http://127.0.0.1:8000/sms/create_sms/';
 
 function Send_message () {
 
     const navigate = useNavigate()
     const [phone_number, setphone_number] = useState('');
     const [message, setmessage] = useState('');
+    let user = JSON.parse(localStorage.getItem('user-info'));
 
         async function Send (refresh) {
             refresh.preventDefault();
@@ -17,7 +18,7 @@ function Send_message () {
             formData.append("phone_number",phone_number);
             formData.append("message",message);
 
-            let res = await fetch(`${API}`,{
+            let res = await fetch(`${url_endpoint}`,{
                 method: 'POST',
                 body:formData
             });
@@ -44,11 +45,10 @@ function Send_message () {
                 </div>
 
                 <div className='user'>
-                    <p className='user-msg'>Welcome</p>
+                <p className='user-msg'>Welcome <span className='logged'>{`${user.user['username']}`}</span></p>
                     <nav className='navigate'>
                         <ul>
                             <Link to='/' className='main-a'>Logout</Link>
-                            {/* <a href="#"className='main-a'>Logout</a> */}
                         </ul>
                     </nav>
                 </div>

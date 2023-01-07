@@ -19,7 +19,7 @@ const Janitor = ({ Username, Contact, Description, Location }) => {
                         <p>{ Location }</p>
                     </div>
                     <div>
-                        <a href="#">{ Contact }</a>
+                        <a href="/message">{ Contact }</a>
                     </div>
                 </div>
             </div>

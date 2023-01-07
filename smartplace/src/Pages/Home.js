@@ -14,7 +14,7 @@ function Home() {
                     <ul>
                         <Link to='/' className='links'>Home</Link>
                         <Link to='/register' className='links'>Register</Link>
-                        <Link to='/message' className='links'>Login</Link>
+                        <Link to='/login' className='links'>Login</Link>
                     </ul>
                 </nav>
             </div>

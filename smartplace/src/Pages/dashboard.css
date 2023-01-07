@@ -23,6 +23,11 @@
     padding: 20px;
     font-size: 18px;
 }
+.logged {
+    font-style: italic;
+    cursor: pointer;
+    color: blue;
+}
 .navigate {
     padding: 20px;
     margin: 0px 100px;

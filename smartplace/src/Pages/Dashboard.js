@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './dashboard.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Janitor from '../components/janitor';
 
 
@@ -9,7 +9,10 @@ const BaseUrl = 'http://127.0.0.1:8000/';
 
 function Dashboard() {
 
+    const navigate = useNavigate()
     const [janitor, setjanitor] = useState([])
+    let user = JSON.parse(localStorage.getItem('user-info'));
+    // console.log(user.user.username)
 
     const getAllJanitors = async () =>{
         const response = await fetch(`${BaseUrl}/janitors/`);
@@ -30,6 +33,12 @@ function Dashboard() {
             getAllJanitors()
         },[]
     )
+
+    function logout () {
+        localStorage.clear();
+        navigate('/')
+
+    }
     return (
         <div className="main">
             <div className="container">
@@ -38,11 +47,10 @@ function Dashboard() {
                 </div>
 
                 <div className='user'>
-                    <p className='user-msg'>Welcome</p>
+                    <p className='user-msg'>Welcome <span className='logged'>{`${user.user['username']}`}</span></p>
                     <nav className='navigate'>
                         <ul>
-                            <Link to='/' className='main-a'>Logout</Link>
-                            {/* <a href="#"className='main-a'>Logout</a> */}
+                            <a href='/' className='main-a' onClick={ logout }>Logout</a>
                         </ul>
                     </nav>
                 </div>
