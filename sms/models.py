@@ -1,8 +1,13 @@
 from django.db import models
 import requests
+import os
+from dotenv import load_dotenv
+
+load_dotenv()  # take environment variables from .env.
 
 # Create your models here.
 
+API_KEY = os.getenv('API_KEY')
 
 class Outbox(models.Model):
     date = models.DateTimeField(auto_now_add=True)
@@ -23,7 +28,7 @@ class Outbox(models.Model):
     @staticmethod
     def send(phone_number, message):
         url = 'https://api.africastalking.com/version1/messaging?username=Mysite'
-        headers = {'ApiKey': '9acce893d61074f0f1ca331971a9e0e4e3e18581d474d926d59df4efb7c9e450',
+        headers = {'ApiKey': API_KEY,
                    'Content-Type': 'application/x-www-form-urlencoded',
                    'Accept': 'application/json'}
         body = {'username': 'Mysite',
