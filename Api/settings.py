@@ -97,10 +97,21 @@ WSGI_APPLICATION = 'Api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': db_name,
+#         'USER': db_user,
+#         'PASSWORD': db_paswd,
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': db_name,
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
         'USER': db_user,
         'PASSWORD': db_paswd,
     }
