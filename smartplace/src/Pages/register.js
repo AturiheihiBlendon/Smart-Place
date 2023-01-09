@@ -3,7 +3,8 @@ import './register.css'
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const register_url = 'http://127.0.0.1:8000/api';
+// const register_url = 'http://127.0.0.1:8000/api';
+const register_url = 'https://blendon.pythonanywhere.com/api/';
 
 function Register() {
 

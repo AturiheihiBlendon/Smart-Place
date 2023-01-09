@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import './Login.css'
 
 
-const login_url = 'http://127.0.0.1:8000/api'
+// const login_url = 'http://127.0.0.1:8000/api'
+const login_url = 'https://blendon.pythonanywhere.com/api/'
 
 function Login() {
     

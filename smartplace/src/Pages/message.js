@@ -3,7 +3,8 @@ import { useNavigate, Link } from 'react-router-dom';
 import './message.css'
 
 
-const url_endpoint = 'http://127.0.0.1:8000/sms/create_sms/';
+// const url_endpoint = 'http://127.0.0.1:8000/sms/create_sms/';
+const url_endpoint = 'https://blendon.pythonanywhere.com/sms/create_sms/';
 
 function Send_message () {
 

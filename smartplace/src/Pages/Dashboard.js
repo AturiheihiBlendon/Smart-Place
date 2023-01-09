@@ -4,7 +4,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import Janitor from '../components/janitor';
 
 
-const BaseUrl = 'http://127.0.0.1:8000/';
+// const BaseUrl = 'http://127.0.0.1:8000/';
+const BaseUrl = 'https://blendon.pythonanywhere.com/';
 
 
 function Dashboard() {
