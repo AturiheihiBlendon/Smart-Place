@@ -70,6 +70,7 @@ function Dashboard() {
                             Contact={item.Contact}
                             Description={item.Description}
                             Location={item.Location}
+                            Rate={item.Rate}
                             key={item.id}/>
                         ))}
                     </div>

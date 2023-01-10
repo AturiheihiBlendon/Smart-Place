@@ -5,7 +5,15 @@
     padding: 20px;
     margin: 10px;
 }
-
+.price {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.price-f{
+    color: black;
+    font-weight: bolder;
+}
 .janitor:hover{
     background-image: linear-gradient(rgb(191, 185, 185), rgb(80, 74, 74));
     font-weight: 700px;
