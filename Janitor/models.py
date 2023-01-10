@@ -5,6 +5,7 @@ from django.db import models
 class Janitor(models.Model):
     Username = models.CharField(max_length=30)
     Contact = models.CharField(max_length=15)
+    Rate = models.CharField(max_length=15,null=True)
     Description = models.TextField()
     Location = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
