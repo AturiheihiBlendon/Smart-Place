@@ -15,15 +15,23 @@ const Janitor = ({ Username, Contact, Description, Location, Rate }) => {
                     <div className="price-f">{ Rate }</div>
                 </div>
                 <div className="janitor-desc">
+                    Services offered
                     <p>{ Description }</p>
                 </div>
 
                 <div className="reach-out">
                     <div>
-                        <p>{ Location }</p>
+                        <div className="residence">
+                            <p className="res-t">Location</p>
+                            <p>{ Location }</p>
+                        </div>
                     </div>
                     <div>
-                        <a href="/message">{ Contact }</a>
+                        <div className="mobile">
+                            <p>Mobile</p>
+                            <a href="/message">{ Contact }</a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
